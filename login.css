@@ -1,0 +1,247 @@
+:root{
+    --bordercolor: rgba(224, 222, 222, 0.808);
+    --bordercoloractive: rgb(128, 128, 128);
+}
+body{
+    background-color: rgba(var(--b3f,250,250,250),1);
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.container{
+    width: 60vw;
+    height: auto;
+    margin: 2% auto;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+#image {
+    width: auto;
+    height: 91vh;
+    /* margin-right: -45px; */
+    background-image: url(https://www.instagram.com/static/images/homepage/home-phones.png/43cc71bb1b43.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* #image img{
+    max-width: 400px;
+    height: 100%;
+} */
+#login{
+    width: auto;
+    height: 620px;
+   
+}
+#mainlogin{
+    background-color: white;
+    border: 1.8px solid var(--bordercolor);
+    text-align: center;
+    margin: 20px 0px;
+    justify-content: center;
+    margin-top: 30px;
+    max-width: 350px;
+}
+#mainlogin h1{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 15px auto;
+}
+#mainlogin h1 img{
+    height: 75px;
+    width: auto;
+}
+input{
+    border: 1px solid var(--bordercolor);
+    height: 35px;
+    width: 280px;
+    padding-left: 8px;
+    margin: 4px 30px;
+    border-radius: 2px;
+}
+:-ms-input-placeholder {
+    color: rgba(179, 180, 178, 0.952);
+}
+::-webkit-input-placeholder{
+    color: rgba(179, 180, 178, 0.952);
+}
+input:focus-visible{
+    border: 1px solid var(--bordercoloractive);
+}
+#login-btn{
+    margin: 10px auto;
+}
+#login-btn button{
+    height: 30px;
+    width: 283px;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(132, 212, 241, 0.699);
+    border: none;
+    border-radius: 5px;
+    
+}
+.optionalor{
+    font-size: 18;
+    opacity: 0.5;
+}
+#facebook{
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgba(10, 10, 119, 0.753);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#facebooklogin{
+    margin: 25px auto;
+}
+#facebooklogin i{
+    font-size: 20px;
+    color: rgba(10, 10, 119, 0.753);
+}
+#forgetpasswordiv{
+    margin-bottom: 20px;
+    
+}
+#forgetpassword{
+    font-size: 13.5px;
+    text-decoration: none;
+    color: rgba(10, 10, 119, 0.753);;
+}
+
+#signupfromlogin{
+    background-color: white;
+    font-size: 14px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    border: 1px solid var(--bordercolor);
+    max-width: 350px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    padding: 20px 0px 20px;
+}
+#signupfromlogin a{
+    text-decoration: none;
+}
+.infogetapp{
+    text-align: center;
+    margin: 20px auto;
+}
+#iosapp, #androidapp{
+    float: left;
+    margin-left: 25px;
+}
+#iosapp img{
+    height: 40px;
+}
+#androidapp img{
+    height: 40px;
+}
+.hastagcontainer{
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    width: 40%;
+    height: auto;
+}
+.hastag{
+    margin: 5px 5px 5px 15px;
+    text-align: center;
+    font-size: 14px;
+    opacity: 0.5;
+}
+.footer{
+    display: block;
+    width: 50%;
+    margin: 30px auto;
+    text-align: center;
+    font-size: 15px;
+    opacity: 0.5;
+}
+.language select{
+    border: none;
+}
+.language select:active,
+.language select:focus{
+    border: none;
+}
+@media screen and (max-width: 480px){
+    .container{
+        width: 100vw;
+        height: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: block;
+    }
+    #image{
+        /* display: block; */
+        display: none;
+        width: 100vw;
+        height: auto;
+        background-image: none;
+
+    }
+    #image img{
+        width: 98%;
+        height: auto;
+    }
+
+    #login{
+        display: block;
+        width: 100%;
+    }
+    #mainlogin{
+        width: 100vw;
+        height: auto;
+    }
+    
+    
+}
+@media screen and (max-width: 1025px){ 
+    #image {
+        display: none;
+        width: auto;
+        height: 91vh;
+        margin-right: 0px;
+        background-image: none;
+
+    }
+    #image img{
+        max-width: 400px;
+        height: 100%;
+    }
+   
+} 
+@media screen and (min-width: 481px) and (max-width: 767px) { 
+    .container{
+        width: 100vw;
+        height: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: block;
+    }
+    #image{
+        /* display: block; */
+        display: none;
+        width: 100vw;
+        height: auto;
+        background-image: none;
+
+    }
+    #image img{
+        width: 98%;
+        height: auto;
+    }
+
+    #login{
+        display: block;
+        width: 80%;
+    }
+    #mainlogin{
+        width: 80%;
+        height: auto;
+    }
+} 
